@@ -1,0 +1,73 @@
+#content {
+  font-size: 12px;
+  color: black;
+}
+
+#fb-button{
+  margin-top: 1px;
+  margin-right: 20px;
+}
+
+#profile {
+  display:none;
+}
+
+#logout-btn {
+  display:none;
+  margin-right:30px;
+}
+
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+  height: 800px;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  /*height: 1000px;*/
+  margin: 0;
+  padding: 0 0 50px 0;
+}
+
+#floating-panel {
+  position: absolute;
+  top: 140px;
+  left: 25%;
+  z-index: 5;
+  /*background-color: #fff;*/
+  padding: 5px;
+  /*border: 1px solid #999;*/
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+#floating-panel {
+  margin-left: -52px;
+}
+      
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin: 200px auto 0;
+  color: red;
+}
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.imageOfPost{
+}

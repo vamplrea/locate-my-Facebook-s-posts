@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="https://bootswatch.com/4/darkly/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">Social Post's Place</a>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <ul class="form-inline my-2 my-lg-0">
+          <li><a id="logout-btn" href="#" onclick="logout()">Logout</a></li>
+          <fb:login-button id="fb-button"
+            scope="public_profile,email,user_posts,user_location"
+            onlogin="checkLoginState();">
+          </fb:login-button>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <h3 class="heading">Log in to view your posts on Map</h3>
+      <div class="sample-image"><img src="https://image.ibb.co/ikDoxc/info.jpg" alt="sample image how this website work" /></div>
+      <div id="floating-panel"></div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
